@@ -1,0 +1,40 @@
+.header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.menu-list {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #f1f424;
+  border-radius: 10px;
+  background-color: #397a4f;
+}
+
+.menu-link {
+  border: 0.2px solid #f1f424;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  text-decoration: none;
+  color: #f1f424;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
