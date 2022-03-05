@@ -1,0 +1,90 @@
+body{
+background-image: url("../../public/images/forest3.jpg");
+  
+}
+  form {
+    background-color: #eeedde;
+  
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 40%;
+    border: 2px solid #203239;
+    padding: 10px;
+  
+    background: rgba(255, 255, 255, 0.39);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border: 1px solid #203239;
+    border-radius: 8em;
+    box-sizing: border-box;
+  }
+  
+
+  
+  input:focus::placeholder {
+      color: transparent;
+    }
+  
+  .submit-btn {
+    background-color: #397a4f;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8em;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  .submit-btn:hover {
+    background-color: green;
+  }
+  
+  .cancel-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8em;
+  
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  .cancel-btn:hover {
+    background-color: red;
+  }
+  
+  .avatar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 200px;
+  }
+  
+  a {
+    color: teal;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+  }
+  
