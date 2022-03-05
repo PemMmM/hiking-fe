@@ -44,7 +44,7 @@ function LoginForm() {
         <input type="button" name=""  value="Cancel" className="cancel-btn" />
         <br />
 
-        <a href="#" className="forgot-password">Forgot Password?</a>
+        <a href="#forgotPwd" className="forgot-password">Forgot Password?</a>
       </div>
     </form>
     </div>

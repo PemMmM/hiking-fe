@@ -1,6 +1,7 @@
 body{
 background-image: url("../../public/images/forest3.jpg");
-  
+background-size: 100vw;
+  background-repeat: no-repeat;
 }
   form {
     background-color: #eeedde;

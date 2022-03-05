@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import LandingPage from "./LandingPage";
 import LoginForm from "./LoginForm";
-
+import SignUpForm from "./SignUpForm";
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <Header />
       <LandingPage/>
       <LoginForm/>
+      <SignUpForm />
     </div>
   );
 }
