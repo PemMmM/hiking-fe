@@ -8,6 +8,7 @@ import {
   LoginForm,
   SignUpForm,
   LandingPage,
+  UserProfile
 } from "./components";
 
 
@@ -18,6 +19,8 @@ ReactDOM.render(
         <Route path="/" element={<LandingPage />} />
         <Route path="/signUpForm" element={<SignUpForm />} />
         <Route path="/loginForm" element={<LoginForm />} />
+        <Route path="/userProfile" element={<UserProfile />} />
+
       </Routes>
     <Footer />
   </Router>,

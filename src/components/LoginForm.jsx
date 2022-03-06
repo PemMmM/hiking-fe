@@ -36,9 +36,9 @@ function LoginForm() {
           required
         />
         <br />
-
+        {/*
         <input type="checkbox" name=""  />Remember me <br />
-
+        */}
         <input type="submit" name=""  value="Login" className="submit-btn" />
 
         <input type="button" name=""  value="Cancel" className="cancel-btn" />

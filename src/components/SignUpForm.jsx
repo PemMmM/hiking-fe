@@ -1,38 +1,50 @@
-import React from 'react';
+import React from "react";
 import "../styles/signUpForm.css";
 
 function SignUpForm() {
   return (
-    <div className="signUpForm">SignUpForm
-
-<form action="">
+    <div className="signUpForm">
+      SignUpForm
+      <form action="">
         <div className="form-area">
-          <h1>Register</h1>
-          <label for="name">Name</label>
+          <h1>Sign Up</h1>
+
+          <label htmlFor="avatar">Avatar
+            {" "}
+            <img
+              src="./images/user_icon_001.jpg"
+              alt="avatar"
+              className="avatar"
+            />
+          </label>
+          <input type="image" alt="user image" name="avatar" id="avatar" />
+          <br />
+
+          <label htmlFor="name">Name</label>
           <input
             type="text"
             name="name"
             id="name"
             minLength="2"
-            maxlength="40"
+            maxLength="40"
             placeholder="Your name"
             required
           />
           <br />
 
-          <label for="surname">Surname</label>
+          <label htmlFor="surname">Surname</label>
           <input
             type="text"
             name="surname"
             id="surname"
-            minlength="2"
-            maxlength="40"
+            minLength="2"
+            maxLength="40"
             placeholder="Your surname"
             required
           />
           <br />
 
-          <label for="email">Email</label>
+          <label htmlFor="email">Email</label>
           <input
             type="email"
             name="email"
@@ -43,19 +55,40 @@ function SignUpForm() {
           />
           <br />
 
-          <label for="password">Password</label>
+          <label htmlFor="phone">Phone Number</label>
+          <input
+            type="number"
+            name="phone"
+            id="phone"
+            placeholder="+90 5** *** ** **"
+            required
+          />
+          <br />
+
+          <label htmlFor="DoB">Date of Birth</label>
+          <input
+            type="date"
+            name="DoB"
+            id="DoB"
+            placeholder="01/01/1991"
+            required
+          />
+          <br />
+
+          <label htmlFor="password">Password</label>
           <input
             type="password"
             name="password"
             id="password"
-            minlength="8"
-            maxlength="20"
+            minLength="8"
+            maxLength="20"
             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}"
             placeholder="********"
+            required
           />
           <br />
 
-          <label for="confirm-password">Confirm Password</label>
+          <label htmlFor="confirm-password">Confirm Password</label>
           <input
             type="password"
             name="confirm-password"
@@ -64,6 +97,7 @@ function SignUpForm() {
             maxLength="20"
             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}"
             placeholder="********"
+            required
           />
           <br />
 
@@ -80,12 +114,9 @@ function SignUpForm() {
             className="reset-btn"
           />
         </div>
-        
       </form>
-
-
     </div>
-  )
+  );
 }
 
-export default SignUpForm
+export default SignUpForm;
