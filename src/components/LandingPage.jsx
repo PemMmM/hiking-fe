@@ -4,7 +4,7 @@ import "../styles/landingPage.css"
 function LandingPage() {
   return (
     <div>
-        TEST
+        
         
     </div>
   )
