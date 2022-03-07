@@ -1,17 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
+
 import "../styles/userProfile.css";
 
 function UserProfile() {
   
-  const [name, setName] = useState("");
-  const [surname, setSurname] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState(0);
-  const [dateOfBirth, setDateOfBirth] = useState("");
-  // avatar eklenecek
 
-  const display = ()=>{console.log(name);}
 
   return (
     <div>
@@ -38,9 +31,7 @@ function UserProfile() {
             minLength="2"
             maxLength="40"
             placeholder="Your name"
-            onChange={(event) => {
-              setName(event.target.value);
-            }}
+           
             required
           />
           <br />
@@ -53,9 +44,6 @@ function UserProfile() {
             minLength="2"
             maxLength="40"
             placeholder="Your surname"
-            onChange={(event) => {
-              setSurname(event.target.value);
-            }}
             required
           />
           <br />
@@ -67,9 +55,6 @@ function UserProfile() {
             id="email"
             placeholder="name@email.com"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-            onChange={(event) => {
-              setEmail(event.target.value);
-            }}
             required
           />
           <br />
@@ -80,9 +65,7 @@ function UserProfile() {
             name="phone"
             id="phone"
             placeholder="+90 5** *** ** **"
-            onChange={(event) => {
-              setPhoneNumber(event.target.value);
-            }}
+           
             required
           />
           <br />
@@ -93,9 +76,7 @@ function UserProfile() {
             name="DoB"
             id="DoB"
             placeholder="01/01/1991"
-            onChange={(event) => {
-              setDateOfBirth(event.target.value);
-            }}
+            
             required
           />
           <br />
@@ -109,9 +90,7 @@ function UserProfile() {
             maxLength="20"
             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}"
             placeholder="********"
-            onChange={(event) => {
-              setPassword(event.target.value);
-            }}
+            
             required
           />
           <br />
@@ -134,14 +113,14 @@ function UserProfile() {
             name="update"
             value="Update"
             className="submit-btn"
-            onClick={display}
+          
           />
           <input
             type="reset"
             name="cancel"
             value="Cancel"
             className="reset-btn"
-            onClick={display}
+    
           />
         </div>
       </form>
