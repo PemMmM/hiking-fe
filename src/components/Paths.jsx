@@ -4,6 +4,7 @@ import useAPI from "../effects/useAPI";
 import Path from "./Path";
 
 const Paths = () => {
+  
   const [pathsLoading, pathsError, pathsResponse] = useAPI(() => getAllPaths());
 
   if (pathsLoading) {
@@ -26,7 +27,7 @@ const Paths = () => {
             averageLength={path.averageLength}
             category={path.category}
             image={path.image}
-            onSelect={}
+            pathId={path.pathId}
           />
         ))}
       </div>
