@@ -1,6 +1,7 @@
 import React from "react";
 import getAllPaths from "../services/paths/getAllPaths";
 import useAPI from "../effects/useAPI";
+import Path from "./Path";
 
 const Paths = () => {
   const [pathsLoading, pathsError, pathsResponse] = useAPI(() => getAllPaths());
@@ -15,17 +16,20 @@ const Paths = () => {
 
   console.log(paths);
 
-  return (
-    <div>
-      {paths.map((path) => {
-        return (
-          <li style={{ color: "white" }}>
-            {" "}
-            {path.pathDescription} <span> {path.pathId}</span>
-          </li>
-        );
-      })}
-    </div>
+    return (
+      <div className="paths">
+        {paths.map((path) => (
+          <Path
+            key={path.pathId}
+            city={path.city}
+            difficulty={path.difficulty}
+            averageLength={path.averageLength}
+            category={path.category}
+            image={path.image}
+            onSelect={}
+          />
+        ))}
+      </div>
   );
 };
 
