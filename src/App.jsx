@@ -18,7 +18,7 @@ function App() {
         <Route path="/loginForm" element={<LoginForm />} />
         <Route path="/signUpForm" element={<SignUpForm />} />
         <Route path="/userProfile" element={<UserProfile />} />
-        <Route path="/paths" element={<Paths />} />
+        <Route path="/path" element={<Paths />} />
         <Route path="/paths/:pathId" element={<PathDetails />} />
         <Route path="/" element={<LandingPage />} />
       </Routes>
