@@ -1,10 +1,13 @@
 import React from "react";
 import getAllPaths from "../services/paths/getAllPaths";
 import useAPI from "../effects/useAPI";
-import Path from "./Path";
+import { useNavigate } from "react-router-dom";
+
 
 const Paths = () => {
   
+  let navigate = useNavigate();
+
   const [pathsLoading, pathsError, pathsResponse] = useAPI(() => getAllPaths());
 
   if (pathsLoading) {
@@ -20,15 +23,17 @@ const Paths = () => {
     return (
       <div className="paths">
         {paths.map((path) => (
-          <Path
-            key={path.pathId}
-            city={path.city}
-            difficulty={path.difficulty}
-            averageLength={path.averageLength}
-            category={path.category}
-            image={path.image}
-            pathId={path.pathId}
-          />
+          
+
+          <div className="paths">
+      <button type="button" onClick={() => navigate(`/paths/${path.pathId}`, { replace: true })}>
+        <div className="city">{path.city}</div>
+        <div className="difficulty">{path.difficulty}</div>
+        <div className="averageLength">{path.averageLength}</div>
+        <div className="category">{path.category}</div>
+        <div className="image">{path.image}</div>
+      </button>
+    </div>
         ))}
       </div>
   );

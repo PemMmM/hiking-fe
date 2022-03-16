@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import getPathById from "../services/paths/getPathById";
 
 const PathDetails = () => {
+  
   const location = useLocation();
 
   const [pathLoading, pathError, pathResponse] = useAPI(() => getPathById({}));
