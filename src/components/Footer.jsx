@@ -11,9 +11,9 @@ function Footer() {
         --a link to be implemented to contact with site--
       </div>
       <div className="socials">
-        <li>Facebook<FaFacebookSquare /></li>
-        <li>instagram <FaInstagramSquare /></li>
-        <li>twitter <FaTwitterSquare /></li>
+        <li><FaFacebookSquare /></li>
+        <li><FaInstagramSquare /></li>
+        <li><FaTwitterSquare /></li>
       </div>
 
     </div>
