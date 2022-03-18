@@ -7,7 +7,7 @@ function Header() {
     <div className="wrap">
       <header className="header">
         <h1 className="logo-title">
-          <NavLink className="menu-link" to="./">
+          <NavLink to="./">
             <img className="header-logo" src="./images/logo.svg" alt="" />
           </NavLink>
         </h1>
