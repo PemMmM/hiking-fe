@@ -1,5 +1,7 @@
-/* *{
-    width: 100vw;
-    height: calc(100vh - 70px);
-    scroll-snap-align: start;
-} */
+body {
+    background-image: url("../../public/images/photo1.jpg");
+    height: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }

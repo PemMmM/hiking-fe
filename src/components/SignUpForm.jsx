@@ -11,16 +11,17 @@ function SignUpForm() {
   const [dateOfBirth, setDateOfBirth] = useState("");
   // avatar eklenecek
 
-  const display = ()=>{console.log(name+surname+email+password+phoneNumber+dateOfBirth);}
-  
+  const display = () => {
+    console.log(name + surname + email + password + phoneNumber + dateOfBirth);
+  };
+
   return (
     <div className="signUpForm">
-      SignUpForm
-      <form action="">
+      <form className="form" action="">
         <div className="form-area">
           <h1>Sign Up</h1>
 
-          <label htmlFor="avatar">Avatar
+          <label htmlFor="avatar">
             {" "}
             <img
               src="./images/user_icon_001.jpg"
@@ -42,7 +43,6 @@ function SignUpForm() {
             onChange={(event) => {
               setName(event.target.value);
             }}
-            
             required
           />
           <br />
