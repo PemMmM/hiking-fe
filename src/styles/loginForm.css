@@ -1,9 +1,4 @@
-body {
-  background-image: url("../../public/images/photo1.jpg");
-  height: 100vw;
-  background-position: center;
-  background-size: cover;
-}
+
 form {
   background-color: #eeedde;
   display: flex;

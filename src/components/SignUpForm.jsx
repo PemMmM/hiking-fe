@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/signUpForm.css";
-import { useState } from "react";
+import postUser from "../services/user/postUser/index";
 
 function SignUpForm() {
   const [name, setName] = useState("");
@@ -136,7 +136,7 @@ function SignUpForm() {
             name=""
             value="Register"
             className="submit-btn"
-            onClick={display}
+            onClick={postUser()}
           />
           <input
             type="reset"
