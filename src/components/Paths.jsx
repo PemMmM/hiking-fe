@@ -3,9 +3,7 @@ import getAllPaths from "../services/paths/getAllPaths";
 import useAPI from "../effects/useAPI";
 import { useNavigate } from "react-router-dom";
 
-
 const Paths = () => {
-  
   let navigate = useNavigate();
 
   const [pathsLoading, pathsError, pathsResponse] = useAPI(() => getAllPaths());
@@ -20,22 +18,23 @@ const Paths = () => {
 
   console.log(paths);
 
-    return (
-      <div className="paths">
-        {paths.map((path) => (
-          
-
-          <div className="paths">
-      <button type="button" onClick={() => navigate(`/paths/${path.pathId}`, { replace: true })}>
-        <div className="city">{path.city}</div>
-        <div className="difficulty">{path.difficulty}</div>
-        <div className="averageLength">{path.averageLength}</div>
-        <div className="category">{path.category}</div>
-        <div className="image">{path.image}</div>
-      </button>
+  return (
+    <div className="paths">
+      {paths.map((path) => (
+        <div className="paths">
+          <button
+            type="button"
+            onClick={() => navigate(`/paths/${path.pathId}`, { replace: true })}
+          >
+            <div className="city">{path.city}</div>
+            <div className="difficulty">{path.difficulty}</div>
+            <div className="averageLength">{path.avLength}</div>
+            <div className="category">{path.category}</div>
+            <div className="image">{path.image}</div>
+          </button>
+        </div>
+      ))}
     </div>
-        ))}
-      </div>
   );
 };
 

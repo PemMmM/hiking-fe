@@ -1,10 +1,20 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "../styles/header.css";
 import SignedIn from "./SignedIn";
 import SignedOut from "./SignedOut";
+import Authentication from "../services/Authentication/index";
+
+let auth = new Authentication();
 
 function Header() {
+  let navigate = useNavigate();
+  const handleLogout = (event) => {
+    event.preventDefault();
+    auth.logout();
+    navigate("/");
+    window.location.reload();
+  };
   return (
     <div className="wrap">
       <header className="header">
@@ -16,7 +26,7 @@ function Header() {
       </header>
       <nav className="nav">
         <ul className="menu-list">
-        <SignedIn>
+          <SignedIn>
             <li className="menu-item">
               <NavLink className="menu-link" to="./path">
                 Paths
@@ -26,6 +36,15 @@ function Header() {
               <NavLink className="menu-link" to="./userProfile">
                 Profile
               </NavLink>
+            </li>
+            <li className="menu-item">
+              <button
+                className="menu-link"
+                to="./userProfile"
+                onClick={handleLogout}
+              >
+                SignOut
+              </button>
             </li>
           </SignedIn>
           <SignedOut>
@@ -40,7 +59,6 @@ function Header() {
               </NavLink>
             </li>
           </SignedOut>
-
         </ul>
       </nav>
     </div>
