@@ -11,9 +11,9 @@ function SignUpForm() {
   const [dateOfBirth, setDateOfBirth] = useState("");
   // avatar eklenecek
 
-  const display = () => {
-    console.log(name + surname + email + password + phoneNumber + dateOfBirth);
-  };
+  // const display = () => {
+  //   console.log(name + surname + email + password + phoneNumber + dateOfBirth);
+  // };
 
   return (
     <div className="signUpForm">
@@ -136,7 +136,17 @@ function SignUpForm() {
             name=""
             value="Register"
             className="submit-btn"
-            onClick={postUser()}
+            onClick={(event) => {
+              event.preventDefault();
+              postUser({
+                name,
+                surname,
+                phoneNumber,
+                email,
+                password,
+                dateOfBirth,
+              });
+            }}
           />
           <input
             type="reset"

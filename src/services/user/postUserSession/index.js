@@ -1,6 +1,8 @@
-import http from "utils/http";
-import { sessions } from "constants/endpoints";
+// import http from "utils/http";
+// import { sessions } from "constants/endpoints";
 import mapValues from "utils/mapValues";
+import http from "../../../utils/http";
+import { sessions } from "../../../constants/endpoints";
 
 const postUserSession = ({
   prtUpload,
