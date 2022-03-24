@@ -2,6 +2,7 @@ import axios from "axios";
 import { user } from "../../constants/endpoints";
 import parseJWTPayload from "./utils/parseJWTPayload";
 
+
 class Authentication {
   login({ email, password }) {
     const loginEndpoint = user.login();

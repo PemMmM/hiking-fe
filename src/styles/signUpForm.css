@@ -1,47 +1,58 @@
-.container{
-    font-family: 'Roboto Slab', serif;  width: 100%;
-    font-weight: bolder;
+.avatar {
+  height: 10vw;
+  width: 10vw;
 }
 
 .image {
-  width: 50%;
-  height: 50%;
+  width: 30%;
+  height: 30%;
   object-fit: cover;
-  border-radius: 2em;
+  border-radius: 1.2em;
 }
-
 .form-area {
-  background: rgba(204, 204, 204, 0.33);
+  background: rgba(222, 206, 193, 0.3);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(4px);
   width: 100%;
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding: 10px;
+  padding: 2% 8%;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.form {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  background: none;
+  padding: 0;
+  box-shadow: none;
+  backdrop-filter: none;
+  width: 45%;
 }
 
 input[type="text"],
 input[type="password"],
 input[type="date"],
 input[type="number"],
-input[type="email"]
-{
+input[type="email"] {
   padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: none;
-
-  border-radius: 8em;
-  box-sizing: border-box;
+  display: flex;
+  border: 1px solid rgb(50, 51, 31);
+  border-radius: 16px;
+  background-color: rgba(50, 51, 31, 0.6);
+  filter: invert(100%);
+  font-size:0.95rem;
+  color:rgb(153, 160, 173);
+}
+input::placeholder{
+  color:rgb(153, 160, 173);
 }
 
-
-
-.submit-btn{
-    background-color: #04aa6d;
+.submit-btn {
+  background-color: rgb(56, 141, 84);
   color: white;
   font-weight: bolder;
   padding: 14px 20px;
@@ -50,16 +61,19 @@ input[type="email"]
   border-radius: 8em;
   cursor: pointer;
   width: 100%;
-  font-size: 14px;  
+  font-size: 1.2rem;
 }
 .submit-btn:hover {
-    background-color: green;
-    transform: scale(1.02);
-  }
+  background-color: green;
+  transition: all ease 0.5s;
+  text-shadow: 1px 1px 2px white, 1px 1px 10px #000000, 0 0 5px rgb(60, 63, 60);
+  box-shadow: 1px 1px 2px white, 1px 1px 10px #000000, 0 0 5px rgb(60, 63, 60);
 
-.reset-btn{
-    background-color: #f44336;
-    color: white;
+}
+
+.reset-btn {
+  background-color: #a8261d;
+  color: white;
   font-weight: bolder;
   padding: 14px 20px;
   margin: 8px 0;
@@ -67,17 +81,23 @@ input[type="email"]
   border-radius: 8em;
   cursor: pointer;
   width: 100%;
-  font-size: 14px;  
+  font-size: 1.2rem;
 }
 .reset-btn:hover {
-    background-color: red;
-    transform: scale(1.02);
-  }
-  
- h1{
-     text-align: center;
-    }
+  background-color: rgb(177, 6, 6);
+  transition: all ease 0.5s;
+  text-shadow: 1px 1px 2px white, 1px 1px 10px #000000, 0 0 5px rgb(60, 63, 60);
+  box-shadow: 1px 1px 2px white, 1px 1px 10px #000000, 0 0 5px rgb(60, 63, 60);
 
-    input:focus::placeholder {
-        color: transparent;
-      }
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 1px 1px 2px white, 0 0 25px #decec1, 0 0 5px rgb(60, 63, 60);
+}
+
+div > label {
+  font-size: 1.2rem;
+  color: black;
+  text-shadow: 1px 1px 2px white, 0 0 25px #decec1, 0 0 5px rgb(60, 63, 60);
+}
