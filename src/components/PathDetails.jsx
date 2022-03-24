@@ -28,7 +28,7 @@ const PathDetails = () => {
       <div className="title">{path.pathTitle}</div>
       <div className="length">{path.avLength}</div>
       <div className="category">{path.pathCategory}</div>
-      <div className="image">{path.image}</div>
+      <img className="image" src={path.image} alt="" />
       <div className="difficulty">{path.pathDifficulty}</div>
       <div className="description">{path.pathDescription}</div>
     </div>

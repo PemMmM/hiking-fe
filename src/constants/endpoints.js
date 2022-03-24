@@ -8,10 +8,6 @@ const user = {
   putPersonalDetails: () => `/profile-edit/personal`,
 };
 
-// const users = {
-//   getUsers: () => `/users`,
-// };
-
 const paths = {
   getAllPaths: () => `/paths`,
   getPathById: ({ pathId }) => `/paths/${pathId}`,

@@ -1,14 +1,12 @@
-import React from 'react';
-import "../styles/landingPage.css"
-import Paths from "./Paths";
+import React from "react";
+import "../styles/landingPage.css";
 
 function LandingPage() {
   return (
     <div>
-      <span>Take trip !</span>  
-        <Paths/>
+      <span>Take trip !</span>
     </div>
-  )
+  );
 }
 
-export default LandingPage
+export default LandingPage;

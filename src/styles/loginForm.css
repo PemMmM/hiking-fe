@@ -1,25 +1,18 @@
-body {
-  background-image: url("../../public/images/forest3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
+
 form {
   background-color: #eeedde;
   display: flex;
   flex-direction: column;
   margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
   width: 40%;
   border: 2px solid #203239;
   padding: 10px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.39);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(1.5px);
-  -webkit-backdrop-filter: blur(1.5px);
-  border: 1px solid rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 input[type="text"],
@@ -80,7 +73,7 @@ input:focus::placeholder {
 }
 
 a {
-  color: black;
+  color: teal;
   text-decoration: none;
 }
 

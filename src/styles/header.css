@@ -1,55 +1,79 @@
 .header {
   height: 70px;
+  width: 100%;
   display: flex;
   align-items: center;
-  color: white;
-  text-shadow: 1px 1px 2px black, 0 0 25px #DECEC1, 0 0 5px darkgreen;
-  background-color: rgba(50, 51, 31, 0.8);
+  justify-content: center;
+  top: 0px;
+  background: linear-gradient(to right, rgba(50,51,31,0.7), rgb(27, 27, 23),rgba(50,51,31,0.7) );  margin: 0 auto;
+position: fixed;
+
+
 }
 .header-logo {
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  color: white;
+  margin: 0 auto;
   filter:invert(100%);
+  box-shadow: 0 0 1px black, 0 0 25px #decec1, 0 0 5px darkgreen;
+
+}
+.header-logo:hover{
+  background-color: rgba(50, 51, 31,0.8);
+  box-shadow: 1px 1px 2px black, 0 0 25px  darkblue, 0 0 5px darkblue;
+  transition: ease all 0.5s;
+  filter: invert(85%);
+  transform: scale(1.1);
 }
 .menu-list {
-  margin: 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
   list-style-type: none;
+  background-color: rgba(50, 51, 31,0);
+  width: 100%;
+  margin: 0 auto;
+
 }
 .wrap {
   display: flex;
+  background: linear-gradient(to right, rgba(50,51,31,0.7), rgb(27, 27, 23),rgba(50,51,31,0.7) );  margin: 0 auto;
+   margin: 0 auto;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  border-radius: 10px;
-  background-color: transparent;
-  background: rgba(11, 12, 13, 0.70);
+  width: 100%;
+  margin: 0;
+
 }
 
 .menu-link {
-  border-radius: 5px;
   padding: 10px;
-  margin: 5px;
   text-decoration: none;
   color: white;
   font-weight: 600;
-}
+  font-size: 1.5rem;
+  display: flex;
+  text-shadow: 1px 1px 2px black, 0 0 25px #decec1, 0 0 5px darkgreen;
 
-.menu-link:hover{
-  transform: ease all 1;
-  background-color: aliceblue;
-  color:black;
-  border: 1px solid white;
-  border-radius: 10px;
-  box-shadow: 2px 2px 3px #487F63, -2px -2px 3px #487F63;
-  
+}
+.menu-link:hover {
+  box-shadow: 1px 1px 2px black, 0 0 25px  #DECEC1, 0 0 5px darkblue;
+  transition: ease all 0.5s;
+  transform: scale(1.1);
+  color:white;
+  border:none;
 }
 
 .nav {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-around;
+  color:white;
+  top: 0px;
+  width: 100%;
+}
+ul{
+  padding-inline-start: 0;
 }

@@ -1,10 +1,16 @@
 import React from "react";
+// import useAPI from "../effects/useAPI";
+// import { useParams } from "react-router-dom";
+// import getUserById from "../services/paths/getPathById";
 
-import "../styles/userProfile.css";
+// import "../styles/userProfile.css";
 
 function UserProfile() {
-  
+  // const params = useParams();
 
+  // const [pathLoading, pathError, pathResponse] = useAPI(() =>
+  //   getPathById(params.pathId)
+  // );
 
   return (
     <div>
@@ -31,7 +37,6 @@ function UserProfile() {
             minLength="2"
             maxLength="40"
             placeholder="Your name"
-           
             required
           />
           <br />
@@ -65,7 +70,6 @@ function UserProfile() {
             name="phone"
             id="phone"
             placeholder="+90 5** *** ** **"
-           
             required
           />
           <br />
@@ -76,7 +80,6 @@ function UserProfile() {
             name="DoB"
             id="DoB"
             placeholder="01/01/1991"
-            
             required
           />
           <br />
@@ -90,7 +93,6 @@ function UserProfile() {
             maxLength="20"
             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}"
             placeholder="********"
-            
             required
           />
           <br />
@@ -113,14 +115,12 @@ function UserProfile() {
             name="update"
             value="Update"
             className="submit-btn"
-          
           />
           <input
             type="reset"
             name="cancel"
             value="Cancel"
             className="reset-btn"
-    
           />
         </div>
       </form>
