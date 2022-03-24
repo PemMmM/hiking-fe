@@ -22,7 +22,8 @@ function LoginForm() {
       .login({ email, password })
       .then(() => {
         setLoading(false);
-        navigate.push("/");
+        navigate("/");
+        window.location.reload();
       })
       .catch((err) => {
         setLoading(false);

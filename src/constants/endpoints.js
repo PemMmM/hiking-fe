@@ -14,7 +14,7 @@ const user = {
 
 const paths = {
   getAllPaths: () => `/paths`,
-  getPathById: ({ pathId }) => `/path/${pathId}`,
+  getPathById: ({ pathId }) => `/paths/${pathId}`,
 };
 
 export { user, paths };

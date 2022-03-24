@@ -1,13 +1,13 @@
 import React from "react";
 import useAPI from "../effects/useAPI";
-import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import getPathById from "../services/paths/getPathById";
 
 const PathDetails = () => {
   
-  const location = useLocation();
+  const params = useParams();
 
-  const [pathLoading, pathError, pathResponse] = useAPI(() => getPathById({}));
+  const [pathLoading, pathError, pathResponse] = useAPI(() => getPathById(params.pathId));
 
   if (pathLoading) {
     return <p>LOADING...</p>;
