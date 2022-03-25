@@ -16,7 +16,7 @@ function UserProfile() {
     <div>
       <form action="">
         <div className="form-area">
-          <h1>Sign Up</h1>
+          <h1>Profile</h1>
 
           <label htmlFor="avatar">
             Avatar{" "}

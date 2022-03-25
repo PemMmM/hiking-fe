@@ -16,8 +16,6 @@ const Paths = () => {
   }
   const { paths } = pathsResponse;
 
-  console.log(paths);
-
   return (
     <div className="paths">
       {paths.map((path) => (
@@ -32,6 +30,7 @@ const Paths = () => {
             <div className="category">{path.category}</div>
             <img className="image" src={path.image} alt="" />
           </button>
+          s
         </div>
       ))}
     </div>
