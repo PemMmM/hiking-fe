@@ -60,7 +60,7 @@ function LoginForm() {
 
           <label htmlFor="password">Password</label>
           <input
-            className="passwor-field"
+            className="password-field"
             type="password"
             name="password"
             id="password"
