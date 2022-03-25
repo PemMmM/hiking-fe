@@ -14,19 +14,19 @@ function UserProfile() {
 
   return (
     <div>
-      <form action="">
+      <form action="" className="user-profile-form">
         <div className="form-area">
-          <h1>Sign Up</h1>
+          <h1>Profile</h1>
 
           <label htmlFor="avatar">
-            Avatar{" "}
+            {" "}
             <img
               src="./images/user_icon_001.jpg"
               alt="avatar"
               className="avatar"
             />
           </label>
-          <input type="image" alt="user image" name="avatar" id="avatar" />
+          {/* <input type="image" alt="user image" name="avatar" id="avatar" /> */}
           <br />
 
           <label htmlFor="name">Name</label>

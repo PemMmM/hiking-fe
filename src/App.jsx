@@ -6,6 +6,7 @@ import SignUpForm from "./components/SignUpForm";
 import Footer from "./components/Footer";
 import UserProfile from "./components/UserProfile";
 import PathDetails from "./components/PathDetails";
+import AuthRoute from "./components/AuthRoute";
 // import { Path } from "react-router-dom";
 import Paths from "./components/Paths";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -18,8 +19,12 @@ function App() {
         <Route path="/loginForm" element={<LoginForm />} />
         <Route path="/signUpForm" element={<SignUpForm />} />
         <Route path="/userProfile" element={<UserProfile />} />
-        <Route path="/path" element={<Paths />} />
-        <Route path="/paths/:pathId" element={<PathDetails />} />
+        <Route exact path="/path" element={<AuthRoute />}>
+          <Route exact path="/path" element={<Paths />} />
+        </Route>
+        <Route exact path="/paths/:pathId" element={<AuthRoute />}>
+          <Route exact path="/paths/:pathId" element={<PathDetails />} />
+        </Route>
         <Route path="/" element={<LandingPage />} />
       </Routes>
       <Footer />
