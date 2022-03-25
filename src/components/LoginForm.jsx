@@ -32,7 +32,7 @@ function LoginForm() {
   };
   return (
     <div>
-      <form action="">
+      <form action="" className="login-form">
         <div className="image-container">
           <img
             src="./images/user_icon_001.jpg"

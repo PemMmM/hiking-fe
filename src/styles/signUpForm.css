@@ -9,7 +9,7 @@
   object-fit: cover;
   border-radius: 1.2em;
 }
-.form-area {
+.sign-up-form {
   background: rgba(222, 206, 193, 0.3);
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
@@ -21,33 +21,91 @@
   margin: auto;
   padding: 2% 8%;
   margin-bottom: 120px;
+  width: 50%;
+  height: 50%;
+  margin-top: 4%;
 }
 .form {
-  background-color: rgba(0, 0, 0, 0);
+  display: block;
+  width: auto;
+}
+#sign-up-name {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
   border: none;
-  background: none;
-  padding: 0;
-  box-shadow: none;
-  backdrop-filter: none;
-  width: 45%;
+  border: 1px solid #203239;
+  border-radius: 8em;
+  box-sizing: border-box;
+}
+#sign-up-surname {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border: 1px solid #203239;
+  border-radius: 8em;
+  box-sizing: border-box;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="date"],
-input[type="number"],
-input[type="email"] {
+#sign-up-email {
+  width: 100%;
   padding: 12px 20px;
-  display: flex;
-  border: 1px solid rgb(50, 51, 31);
-  border-radius: 16px;
-  background-color: rgba(50, 51, 31, 0.6);
-  filter: invert(100%);
-  font-size:0.95rem;
-  color:rgb(153, 160, 173);
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border: 1px solid #203239;
+  border-radius: 8em;
+  box-sizing: border-box;
 }
-input::placeholder{
-  color:rgb(153, 160, 173);
+#sign-up-phone {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border: 1px solid #203239;
+  border-radius: 8em;
+  box-sizing: border-box;
+}
+
+#sign-up-DoB {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border: 1px solid #203239;
+  border-radius: 8em;
+  box-sizing: border-box;
+}
+
+#sign-up-password {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border: 1px solid #203239;
+  border-radius: 8em;
+  box-sizing: border-box;
+}
+#sign-up-confirm-password {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border: 1px solid #203239;
+  border-radius: 8em;
+  box-sizing: border-box;
+}
+
+
+input::placeholder {
+  color: rgb(153, 160, 173);
 }
 
 .submit-btn {
@@ -67,7 +125,6 @@ input::placeholder{
   transition: all ease 0.5s;
   text-shadow: 1px 1px 2px white, 1px 1px 10px #000000, 0 0 5px rgb(60, 63, 60);
   box-shadow: 1px 1px 2px white, 1px 1px 10px #000000, 0 0 5px rgb(60, 63, 60);
-
 }
 
 .reset-btn {
@@ -87,7 +144,6 @@ input::placeholder{
   transition: all ease 0.5s;
   text-shadow: 1px 1px 2px white, 1px 1px 10px #000000, 0 0 5px rgb(60, 63, 60);
   box-shadow: 1px 1px 2px white, 1px 1px 10px #000000, 0 0 5px rgb(60, 63, 60);
-
 }
 
 h1 {
