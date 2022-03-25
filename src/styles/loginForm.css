@@ -1,5 +1,5 @@
 
-form {
+.login-form{
   background-color: #eeedde;
   display: flex;
   flex-direction: column;
@@ -13,10 +13,9 @@ form {
   backdrop-filter: blur(4.4px);
   -webkit-backdrop-filter: blur(4.4px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 2%;
 }
-
-input[type="text"],
-input[type="password"] {
+.username-field{
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -26,6 +25,17 @@ input[type="password"] {
   border-radius: 8em;
   box-sizing: border-box;
 }
+.password-field{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border: 1px solid #203239;
+  border-radius: 8em;
+  box-sizing: border-box;
+}
+
 
 input:focus::placeholder {
   color: transparent;

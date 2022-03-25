@@ -4,7 +4,7 @@ import "../styles/landingPage.css";
 function LandingPage() {
   return (
     <div>
-      <span>Take trip !</span>
+      <span>Go hiking in Cyprus!</span>
     </div>
   );
 }
