@@ -10,8 +10,8 @@ function LoginForm() {
   let navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [invalidCredentialsError, setInvalidCredentialsError] = useState(false);
+  const [setLoading] = useState(false);
+  const [setInvalidCredentialsError] = useState(false);
   // avatar eklenecek
 
 

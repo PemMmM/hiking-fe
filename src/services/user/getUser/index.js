@@ -1,12 +1,12 @@
-// import http from "../../../utils/http";
-// import { users } from "../../../constants/endpoints";
+import http from "../../../utils/http";
+import { user } from "../../../constants/endpoints";
 
-// const getUserById = (pathId) => {
-//   const ENDPOINT = users.getUserById({ userId });
+const getUser = (userId) => {
+  const ENDPOINT = user.getUserById(userId);
 
-//   const { REACT_APP_API_BASE_URL: API_BASE_URL } = process.env;
+  const { REACT_APP_API_BASE_URL: API_BASE_URL } = process.env;
 
-//   return http.get(`${API_BASE_URL}${ENDPOINT}`);
-// };
+  return http.get(`${API_BASE_URL}${ENDPOINT}`);
+};
 
-// export default getAllPaths;
+export default getUser;
