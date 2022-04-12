@@ -1,6 +1,5 @@
-.paths{
+.paths {
   margin: 20px;
-
 }
 
 .card {
@@ -9,11 +8,15 @@
   justify-content: center;
 }
 
-.paths-button {
-  background-color: Transparent;
-  background-repeat:no-repeat;
-  border: none;      
-  
+#path-button {
+  background-repeat: no-repeat;
+  border: none;
+  height: 100px;
+  width: 100%;
+  margin-top: 4%;
+}
+.paths button img {
+  height: 100px;
 }
 .city {
   margin: 0 8%;
@@ -22,27 +25,26 @@
   margin: 0 auto;
 }
 
-.paths-info{
-display: flex;
-justify-content: flex-start;
-align-items: center;
-margin:10px;
-/* From https://css.glass */
-background: rgba(255, 255, 255, 0.08);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(2px);
--webkit-backdrop-filter: blur(2px);
-border: 1px solid rgba(209, 209, 209, 0.2);
+.paths-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border: 1px solid rgba(209, 209, 209, 0.2);
 }
 
-.paths-info>p{
-    display: flex;
-    align-items: center;
-    margin: 20px;
+.paths-info > p {
+  display: flex;
+  align-items: center;
+  margin: 20px;
 }
-.paths-image{
-
+.paths-image {
   height: 200px;
   width: 400px;
   display: block;
@@ -50,13 +52,13 @@ border: 1px solid rgba(209, 209, 209, 0.2);
   border-radius: 5px;
 }
 
-p{
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-font-weight: bolder;
-font-size: 25px;
-letter-spacing: 3px;
+p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: bolder;
+  font-size: 25px;
+  letter-spacing: 3px;
 }

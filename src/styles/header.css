@@ -1,28 +1,15 @@
-.header {
-  height: 70px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 0px;
-  background: linear-gradient(to right, rgba(50,51,31,0.7), rgb(27, 27, 23),rgba(50,51,31,0.7) );  margin: 0 auto;
-position: fixed;
 
-
-}
 .header-logo {
-  height: 50px;
+  height: 40px;
   display: flex;
-  align-items: center;
   justify-content: flex-start;
-  margin: 0 auto;
-  filter:invert(100%);
+  filter: invert(100%);
   box-shadow: 0 0 1px black, 0 0 25px #decec1, 0 0 5px darkgreen;
-
+  margin: 0 20px;
 }
-.header-logo:hover{
-  background-color: rgba(50, 51, 31,0.8);
-  box-shadow: 1px 1px 2px black, 0 0 25px  darkblue, 0 0 5px darkblue;
+.header-logo:hover {
+  background-color: rgba(50, 51, 31, 0.8);
+  box-shadow: 1px 1px 2px black, 0 0 25px darkblue, 0 0 5px darkblue;
   transition: ease all 0.5s;
   filter: invert(85%);
   transform: scale(1.1);
@@ -32,48 +19,48 @@ position: fixed;
   align-items: center;
   justify-content: center;
   list-style-type: none;
-  background-color: rgba(50, 51, 31,0);
+  background-color: rgba(50, 51, 31, 0);
   width: 100%;
   margin: 0 auto;
-
 }
 .wrap {
   display: flex;
-  background: linear-gradient(to right, rgba(50,51,31,0.7), rgb(27, 27, 23),rgba(50,51,31,0.7) );  margin: 0 auto;
-   margin: 0 auto;
-  justify-content: center;
+  margin-top: 0;
+  background: linear-gradient(
+    to right,
+    rgb(27, 27, 23),
+    rgba(50, 51, 31, 0.7),
+    rgb(27, 27, 23)
+  );
+  justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 0;
-
+  position: fixed;
+  top: 0;
 }
 
 .menu-link {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
   padding: 10px;
   text-decoration: none;
   color: white;
-  font-weight: 600;
+  font-weight: 200;
   font-size: 1.5rem;
   display: flex;
   text-shadow: 1px 1px 2px black, 0 0 25px #decec1, 0 0 5px darkgreen;
-
+  margin-right: 15px;
+  margin-left: 15px;
 }
 .menu-link:hover {
-  box-shadow: 1px 1px 2px black, 0 0 25px  #DECEC1, 0 0 5px darkblue;
+  box-shadow: 1px 1px 2px black, 0 0 25px #decec1, 0 0 5px darkblue;
   transition: ease all 0.5s;
   transform: scale(1.1);
-  color:white;
-  border:none;
+  color: white;
+  border: none;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  color:white;
-  top: 0px;
-  width: 100%;
-}
-ul{
+ul {
   padding-inline-start: 0;
 }

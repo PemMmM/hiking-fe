@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/loginForm.css";
 import Authentication from "../services/Authentication/index";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 let auth = new Authentication();
 
@@ -10,10 +10,9 @@ function LoginForm() {
   let navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [setLoading] = useState(false);
-  const [setInvalidCredentialsError] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [invalidCredentialsError, setInvalidCredentialsError] = useState(false);
   // avatar eklenecek
-
 
   const handleLogin = (event) => {
     event.preventDefault();
