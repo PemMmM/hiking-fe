@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/loginForm.css";
 import Authentication from "../services/Authentication/index";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 let auth = new Authentication();
 
@@ -13,7 +13,6 @@ function LoginForm() {
   const [loading, setLoading] = useState(false);
   const [invalidCredentialsError, setInvalidCredentialsError] = useState(false);
   // avatar eklenecek
-
 
   const handleLogin = (event) => {
     event.preventDefault();

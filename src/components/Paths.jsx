@@ -2,6 +2,7 @@ import React from "react";
 import getAllPaths from "../services/paths/getAllPaths";
 import useAPI from "../effects/useAPI";
 import { useNavigate } from "react-router-dom";
+import "../styles/paths.css";
 
 const Paths = () => {
   let navigate = useNavigate();
@@ -23,6 +24,7 @@ const Paths = () => {
       {paths.map((path) => (
         <div className="paths">
           <button
+            id="path-button"
             type="button"
             onClick={() => navigate(`/paths/${path.pathId}`, { replace: true })}
           >

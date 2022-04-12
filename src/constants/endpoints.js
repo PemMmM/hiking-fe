@@ -3,6 +3,7 @@
 */
 
 const user = {
+  getUserById: ()=> `/user-details`,
   login: () => `/login`,
   register: () => `/register`,
   putPersonalDetails: () => `/profile-edit/personal`,

@@ -82,11 +82,11 @@ input:focus::placeholder {
   width: 200px;
 }
 
-a {
+/* a {
   color: teal;
   text-decoration: none;
 }
 
 a:hover {
   color: red;
-}
+} */
