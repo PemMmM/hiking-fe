@@ -17,19 +17,19 @@ const Paths = () => {
   }
   const { paths } = pathsResponse;
 
-  console.log(paths);
+  // console.log(paths);
 
   return (
     <div className="paths">
       {paths.map((path) => (
-        <div className="paths">
+        <div className="path-details">
           <button
             id="path-button"
             type="button"
             onClick={() => navigate(`/paths/${path.pathId}`, { replace: true })}
           >
             <div className="city">{path.city}</div>
-            <div className="difficulty">{path.difficulty}</div>
+            <div className="difficulty">Difficulty: {path.difficulty}</div>
             <div className="averageLength">{path.avLength}</div>
             <div className="category">{path.category}</div>
             <img className="image" src={path.image} alt="" />

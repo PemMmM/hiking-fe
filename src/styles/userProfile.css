@@ -1,88 +1,26 @@
-.user-profile-form {
-  background-color: #eeedde;
+.user-details {
   display: flex;
   flex-direction: column;
-  margin: auto;
-  width: 40%;
-  border: 2px solid #203239;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  padding: 20px;
+  margin: 140px auto;
+  background-color: rgba(49, 49, 42, 0.1);
+  border: 1px solid rgb(49, 49, 42);
+  border-radius: 15px;
+  width: 80%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+.user-title {
+  text-decoration: underline;
+  letter-spacing: 0.2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.group {
   padding: 10px;
-  background: rgba(255, 255, 255, 0.39);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.4px);
-  -webkit-backdrop-filter: blur(4.4px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  margin-top: 2%;
-}
-
-#user-profile-name {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: none;
-  border: 1px solid #203239;
-  border-radius: 8em;
-  box-sizing: border-box;
-}
-#user-profile-surname {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: none;
-  border: 1px solid #203239;
-  border-radius: 8em;
-  box-sizing: border-box;
-}
-#user-profile-email {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: none;
-  border: 1px solid #203239;
-  border-radius: 8em;
-  box-sizing: border-box;
-}
-#user-profile-phone {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: none;
-  border: 1px solid #203239;
-  border-radius: 8em;
-  box-sizing: border-box;
-}
-
-#user-profile-DoB {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: none;
-  border: 1px solid #203239;
-  border-radius: 8em;
-  box-sizing: border-box;
-}
-#user-profile-password {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: none;
-  border: 1px solid #203239;
-  border-radius: 8em;
-  box-sizing: border-box;
-}
-#user-profile-confirm-password {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: none;
-  border: 1px solid #203239;
-  border-radius: 8em;
-  box-sizing: border-box;
+  color: rgb(27, 27, 23);
+  margin: 5px;
 }

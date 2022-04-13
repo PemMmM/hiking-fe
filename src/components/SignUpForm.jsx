@@ -17,8 +17,7 @@ function SignUpForm() {
 
   return (
     <div className="sign-up-form">
-      <form className="form" action="">
-        <h1>Sign Up</h1>
+        <h1 className="signUpTitle">Sign Up</h1>
 
         <label htmlFor="avatar">
           {" "}
@@ -36,6 +35,7 @@ function SignUpForm() {
           type="text"
           name="name"
           id="sign-up-name"
+          className="sections"
           minLength="2"
           maxLength="40"
           placeholder="Your name"
@@ -49,6 +49,7 @@ function SignUpForm() {
         <label htmlFor="surname">Surname</label>
         <input
           type="text"
+          className="sections"
           name="surname"
           id="sign-up-surname"
           minLength="2"
@@ -64,6 +65,7 @@ function SignUpForm() {
         <label htmlFor="email">Email</label>
         <input
           type="email"
+          className="sections"
           name="email"
           id="sign-up-email"
           placeholder="name@email.com"
@@ -78,6 +80,7 @@ function SignUpForm() {
         <label htmlFor="phone">Phone Number</label>
         <input
           type="number"
+          className="sections"
           name="phone"
           id="sign-up-phone"
           placeholder="+90 5** *** ** **"
@@ -91,6 +94,7 @@ function SignUpForm() {
         <label htmlFor="DoB">Date of Birth</label>
         <input
           type="date"
+          className="sections"
           name="DoB"
           id="sign-up-DoB"
           placeholder="01/01/1991"
@@ -105,6 +109,7 @@ function SignUpForm() {
         <input
           type="password"
           name="password"
+          className="sections"
           id="sign-up-password"
           minLength="8"
           maxLength="20"
@@ -121,6 +126,7 @@ function SignUpForm() {
         <input
           type="password"
           name="confirm-password"
+          className="sections"
           id="sign-up-confirm-password"
           minLength="8"
           maxLength="20"
@@ -148,7 +154,6 @@ function SignUpForm() {
           }}
         />
         <input type="reset" name="" value="Reset Form" className="reset-btn" />
-      </form>
     </div>
   );
 }

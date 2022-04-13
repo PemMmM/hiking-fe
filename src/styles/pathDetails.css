@@ -1,0 +1,25 @@
+.paths-details {
+  background-color: rgba(49, 49, 42, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  border: 1px solid rgb(27, 27, 23);
+  width: 80%;  
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.image {
+  height: 300px;
+  width: 600px;
+  margin: 0;
+  padding-top: 15px;
+  object-fit: fill;
+}
