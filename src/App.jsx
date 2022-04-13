@@ -9,6 +9,8 @@ import PathDetails from "./components/PathDetails";
 import AuthRoute from "./components/AuthRoute";
 import Paths from "./components/Paths";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./styles/App.css";
+
 
 function App() {
   return (

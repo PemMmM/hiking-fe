@@ -61,14 +61,26 @@ function Header() {
           </SignedIn>
           <SignedOut>
             <li className="menu-item">
-              <NavLink className="menu-link" to="./loginForm">
-                Log In
-              </NavLink>
+            <button
+              className="menu-link"
+                type="button"
+                onClick={() =>
+                  navigate(`/loginForm`)
+                }
+              >
+                Login
+              </button>
             </li>
             <li className="menu-item">
-              <NavLink className="menu-link" to="./signUpForm">
+            <button
+              className="menu-link"
+                type="button"
+                onClick={() =>
+                  navigate(`/signUpForm`)
+                }
+              >
                 Sign Up
-              </NavLink>
+              </button>
             </li>
           </SignedOut>
         </ul>

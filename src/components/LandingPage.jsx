@@ -3,17 +3,16 @@ import "../styles/landingPage.css";
 
 function LandingPage() {
   return (
-    <div className="landing-page">
-      <div className="lp-text">Go hiking in Cyprus!</div>
-      <div>
-        <img
-          className="landingpage-image"
-          src="../images/forest4.jpg"
-          alt="forest"
-        />
+    <div className="lp">
+      <div className="lp-elements">
+          <div className="lp-text">
+            <h2 className="lp-title"> Go hiking in North Cyprus!</h2>
+            <p className="lp-title-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, dicta!</p>
+            </div>
+          <img className="lp-image" src="../images/forest4.jpg" alt="forest" />
+      <br />
       </div>
-      <br/>
-      <span>
+      <p className="lp-paragraph">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam facere
         blanditiis rem eius consequuntur ut amet ea quidem nisi excepturi. Iste
         labore veniam, iure aperiam ipsa officiis soluta quibusdam accusamus?
@@ -145,8 +144,7 @@ function LandingPage() {
         obcaecati harum beatae dolorem error delectus odio debitis animi
         explicabo dolore distinctio perspiciatis! Earum mollitia incidunt, nulla
         corrupti voluptatibus vel. Repudiandae aut labore reprehenderit?
-      </span>
-      
+      </p>
     </div>
   );
 }

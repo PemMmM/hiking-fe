@@ -1,127 +1,63 @@
+.sign-up-form {
+  background-color: rgba(49, 49, 42, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  width: 80%;
+  padding: 20px;
+  margin: 0  auto;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  overflow: hidden;
+
+}
+.signUpTitle {
+  text-align: center;
+  font-size: 2.4rem;
+  color: rgb(27, 27, 23);
+  text-shadow: 1px 1px 2px white, 0 0 25px #decec1, 0 0 5px rgb(60, 63, 60);
+}
+
 .avatar {
   height: 10vw;
   width: 10vw;
 }
 
-.image {
-  width: 30%;
-  height: 30%;
-  object-fit: cover;
-  border-radius: 1.2em;
-}
-.sign-up-form {
-  background: rgba(222, 206, 193, 0.3);
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  padding: 2% 8%;
-  margin-bottom: 120px;
-  width: 50%;
-  height: 50%;
-  margin-top: 4%;
-}
-.form {
-  display: block;
-  width: auto;
-}
-#sign-up-name {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: none;
-  border: 1px solid #203239;
-  border-radius: 8em;
-  box-sizing: border-box;
-}
-#sign-up-surname {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: none;
-  border: 1px solid #203239;
-  border-radius: 8em;
-  box-sizing: border-box;
-}
 
-#sign-up-email {
+.sections {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
   display: inline-block;
   border: none;
   border: 1px solid #203239;
-  border-radius: 8em;
+  border-radius: 15px;
   box-sizing: border-box;
-}
-#sign-up-phone {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: none;
-  border: 1px solid #203239;
-  border-radius: 8em;
-  box-sizing: border-box;
-}
+  color: rgb(27, 27, 23);
 
-#sign-up-DoB {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: none;
-  border: 1px solid #203239;
-  border-radius: 8em;
-  box-sizing: border-box;
 }
-
-#sign-up-password {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: none;
-  border: 1px solid #203239;
-  border-radius: 8em;
-  box-sizing: border-box;
-}
-#sign-up-confirm-password {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: none;
-  border: 1px solid #203239;
-  border-radius: 8em;
-  box-sizing: border-box;
-}
-
 
 input::placeholder {
   color: rgb(153, 160, 173);
+  font-size: 1.2rem;
 }
 
 .submit-btn {
   background-color: rgb(56, 141, 84);
   color: white;
   font-weight: bolder;
-  padding: 14px 20px;
-  margin: 8px 0;
   border: none;
-  border-radius: 8em;
+  border-radius: 15px;
   cursor: pointer;
-  width: 100%;
   font-size: 1.2rem;
+  height:7vh;
+  margin: 10px;
+
+
 }
 .submit-btn:hover {
-  background-color: green;
+  background-color: rgb(50, 141, 50);
   transition: all ease 0.5s;
   text-shadow: 1px 1px 2px white, 1px 1px 10px #000000, 0 0 5px rgb(60, 63, 60);
   box-shadow: 1px 1px 2px white, 1px 1px 10px #000000, 0 0 5px rgb(60, 63, 60);
@@ -131,13 +67,13 @@ input::placeholder {
   background-color: #a8261d;
   color: white;
   font-weight: bolder;
-  padding: 14px 20px;
-  margin: 8px 0;
   border: none;
-  border-radius: 8em;
+  border-radius: 15px;
   cursor: pointer;
-  width: 100%;
   font-size: 1.2rem;
+  height:7vh;
+  margin: 10px;
+
 }
 .reset-btn:hover {
   background-color: rgb(177, 6, 6);
@@ -146,13 +82,4 @@ input::placeholder {
   box-shadow: 1px 1px 2px white, 1px 1px 10px #000000, 0 0 5px rgb(60, 63, 60);
 }
 
-h1 {
-  text-align: center;
-  text-shadow: 1px 1px 2px white, 0 0 25px #decec1, 0 0 5px rgb(60, 63, 60);
-}
 
-div > label {
-  font-size: 1.2rem;
-  color: black;
-  text-shadow: 1px 1px 2px white, 0 0 25px #decec1, 0 0 5px rgb(60, 63, 60);
-}

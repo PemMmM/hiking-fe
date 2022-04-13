@@ -17,12 +17,12 @@ const Paths = () => {
   }
   const { paths } = pathsResponse;
 
-  console.log(paths);
+  // console.log(paths);
 
   return (
     <div className="paths">
       {paths.map((path) => (
-        <div className="paths">
+        <div className="path-details">
           <button
             id="path-button"
             type="button"
