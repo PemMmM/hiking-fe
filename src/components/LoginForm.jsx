@@ -35,7 +35,7 @@ function LoginForm() {
     <div className="loginPage">
       <h1 className="logInTitle">Log In</h1>
 
-      <label htmlFor="avatar">
+      <label id="avatarr" htmlFor="avatar">
         <img src="./images/user_icon_001.jpg" alt="avatar" className="avatar" />
       </label>
       {/* <div className="image-container">

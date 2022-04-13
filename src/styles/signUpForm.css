@@ -22,6 +22,9 @@
   height: 10vw;
   width: 10vw;
 }
+#avatarr{
+  align-self: center;
+}
 
 
 .sections {
