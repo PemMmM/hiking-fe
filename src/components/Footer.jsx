@@ -6,6 +6,7 @@ import "../styles/footer.css"
 
 function Footer() {
   return (
+    <div className="box">
     <div className="footer">
       <div className="contact-us">
       </div>
@@ -14,7 +15,7 @@ function Footer() {
         <li><FaInstagramSquare /></li>
         <li><FaTwitterSquare /></li>
       </div>
-
+      </div>
     </div>
   )
 }
