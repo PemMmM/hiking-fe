@@ -19,7 +19,7 @@ function SignUpForm() {
     <div className="sign-up-form">
         <h1 className="signUpTitle">Sign Up</h1>
 
-        <label htmlFor="avatar">
+        <label id="avatarr" htmlFor="avatar">
           {" "}
           <img
             src="./images/user_icon_001.jpg"
