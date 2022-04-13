@@ -8,7 +8,6 @@ function Footer() {
   return (
     <div className="footer">
       <div className="contact-us">
-        --a link to be implemented to contact with site--
       </div>
       <div className="socials">
         <li><FaFacebookSquare /></li>

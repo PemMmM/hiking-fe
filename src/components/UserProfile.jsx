@@ -27,7 +27,7 @@ const UserProfile = () => {
       <span className="user-title"> User  Details:</span><br /><br />
       <div className="group first_name">{user.firstName}</div>
       <div className="group last_name">{user.lastName}</div>
-      <div className="group phone_number">{user.phoneNumber}</div>
+      {/* <div className="group phone_number">{user.phoneNumber}</div> */}
       <div className="group email">{user.email}</div>
       <div className="group date_of_birth">{user.dateOfBirth}</div>
     </div>

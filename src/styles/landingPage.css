@@ -43,6 +43,7 @@ body {
   height: 70vh;
   margin:0 30px;
   border:none;
+  z-index: -3;
 }
 .lp-paragraph {
   padding:0 20px;
@@ -53,4 +54,5 @@ body {
   border-left: 1px solid rgb(27, 27, 23);
   border-right: 1px solid rgb(27, 27, 23);  ;
   margin-bottom: 100px;
+  margin-top: 40px;
 }
